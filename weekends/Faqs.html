@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="Faqs.css">
+</head>
+<body>
+    <header class="hedernav">
+        <div class="headerpart">
+            <a href="login.html">SIGN UP</a>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="login.html">
+                    <img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg" alt="Logo">
+                </a>
+            
+            </div>
+            <div class="nav-links">
+                <a href="Home.html">HOME</a>
+                <a href="Magazine.html">MAGAZINE</a>
+                <a href="Adventures.html">ADVENTURES</a>
+                <!-- <a href="Faqs.html">FAQS</a> -->
+                <a href="Abouters.html">ABOUT US</a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="6" stroke="#000" stroke-width="2"/>
+                        <line x1="16.5" y1="16.5" x2="20" y2="20" stroke="#000" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-image">
+                <img src="https://wknd.site/us/en/faqs/_jcr_content/root/container/container/image.coreimg.60.1200.jpeg/1660323785307/adobestock-277768563.jpeg" alt="FAQ Image" style="width: 90%;">
+            </div>
+            <div class="faq-info">
+                <div class="contact-info">
+                    <p>Need more help?</p>
+                    <p>Give us a call at <a href="tel:18008000000">1-800-800-0000</a>.</p>
+                    <p>E-mail us at <a href="mailto:info@wknd.com">info@wknd.com</a></p>
+                    <p>We love to talk adventures!</p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="about-wknd">
+            <p>WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world. Our objective is to create a community to help like-minded adventure seekers find fun, engaging, and responsible ways to enjoy life and create lasting memories.</p>
+        </div>
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+            <button class="faq-button" onclick="toggleAnswer('faq-answer-1')">Who is WKND's intended audience?</button>
+            <div id="faq-answer-1" class="faq-answer">
+                <p>We believe the best adventures and activities are those that are accessible to everyone. WKND is designed to be inclusive of all age ranges, abilities, and budget-levels. We strive to cater to the thrill-seeking adrenaline junkie BASE-jumpers as well as novices that have a spare weekend and interest in trying something new.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+            <button class="faq-button" onclick="toggleAnswer('faq-answer-2')">How does WKND pay for itself?</button>
+            <div id="faq-answer-2" class="faq-answer">
+                <p>WKND charges a small fee for local promoters that want to sponsor their adventures and events on the WKND site. Sponsored Adventures may get sorted to more prominent positions in our Adventures listings pages.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+            <button class="faq-button" onclick="toggleAnswer('faq-answer-3')">Can I contribute to WKND?</button>
+            <div id="faq-answer-3" class="faq-answer">
+                <p>Yes! If you have the expertise and experiences to share, we’ll provide the platform to spread it. As a Guest Writer, you will play an integral role in helping people find fun and cool things to do in your community.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+            <button class="faq-button" onclick="toggleAnswer('faq-answer-4')">How often is WKND updated?</button>
+            <div id="faq-answer-4" class="faq-answer">
+                <p>WKND is updated daily to provide you with the latest in-depth articles on fun activities that we’ve recently explored and new adventures that are available for you to discover. Come back often to see the latest or subscribe to our social feeds.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+            <button class="faq-button" onclick="toggleAnswer('faq-answer-5')">When was WKND founded?</button>
+            <div id="faq-answer-5" class="faq-answer">
+                <p>WKND was created in 2015 when our founders, Daniel and Kilian, realized that their friends and family were constantly using them as resources to find fun things to do while they were in Los Angeles. They loved sharing ideas about fun events and activities they knew of, but wanted to be able to do it at a larger scale across communities. They decided to start WKND as a way to share their insights and experiences with as many people as possible.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item">
+            <button class="faq-button" onclick="toggleAnswer('faq-answer-6')">Is a hot dog a sandwich?</button>
+            <div id="faq-answer-6" class="faq-answer">
+                <p>While it may be described as meat between two pieces of bread, a hot dog is just a sandwich in the same way Michael Jordan was just a basketball player or William Shakespeare was just a playwright. Technically true, but vastly understated.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="faq-item">
+            <button class="faq-button" onclick="toggleAnswer('faq-answer-7')">Is WKND a real company?</button>
+            <div id="faq-answer-7" class="faq-answer">
+                <p>No. The WKND is a fictional online magazine and adventure company that focuses on outdoor activities and trips across the globe. The WKND site is designed to demonstrate functionality for Adobe Experience Manager. There is also a corresponding tutorial that walks a developer through the development. Special thanks to Lorenzo Buosi and Kilian Amendola who created the beautiful design for the WKND site.</p>
+            </div>
+        </div>
+    </section>
+    <script src="carousel.js"></script>
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        }
+    </script>
+
+<div id="footer"></div>
+
+<script>
+    // JavaScript to load the footer content
+    fetch('Footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+</body>
+</html>

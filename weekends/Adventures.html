@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures</title>
+    <link rel="stylesheet" href="Adventures.css">
+</head>
+<body>
+    <header class="hedernav">
+        <div class="headerpart">
+            <a href="login.html">SIGN UP</a>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="login.html">
+                    <img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg" alt="Logo">
+                </a>
+            
+            </div>
+            <div class="nav-links">
+                <a href="Home.html">HOME</a>
+                <a href="Magazine.html">MAGAZINE</a>
+                <!-- <a href="Adventures.html">ADVENTURES</a> -->
+                <a href="Faqs.html">FAQS</a>
+                <a href="Abouters.html">ABOUT US</a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="6" stroke="#000" stroke-width="2"/>
+                        <line x1="16.5" y1="16.5" x2="20" y2="20" stroke="#000" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <h1>Adventures</h1> 
+    <section id="intro">
+        <img src="https://wknd.site/us/en/adventures/_jcr_content/root/container/teaser.coreimg.60.1200.jpeg/1660323801921/adobestock-216674449.jpeg" alt="Adventures Image">
+        <div class="intro-text">
+            <h2>Experience the world with us</h2>
+            <p>With WKND Adventures, you don't just see the world -- you experience its cultures, flavors, and wonders.</p>
+        </div>
+    </section>
+    <div><h1>Current Adventures</h1></div>
+    <hr class="hrwidth"/> 
+    <section id="current-adventures">
+        <div class="navbar">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="climbing">Climbing</button>
+            <button class="filter-btn" data-filter="cycling">Cycling</button>
+            <button class="filter-btn" data-filter="skiing">Skiing</button>
+            <button class="filter-btn" data-filter="surfing">Surfing</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+        </div>
+        
+        <div class="cards-container">
+           
+        </div>
+    </section>
+    
+    <script src="Adventures.js"></script>
+    <div id="footer"></div>
+
+    <script>
+        // JavaScript to load the footer content
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures</title>
+    <link rel="stylesheet" href="Adventures.css">
+</head>
+<body>
+    <header>
+        <h1>Adventures</h1>
+    </header>
+    
+    <section id="intro">
+        <img src="https://wknd.site/us/en/adventures/_jcr_content/root/container/teaser.coreimg.60.1200.jpeg/1660323801921/adobestock-216674449.jpeg" alt="Adventures Image">
+        <div class="intro-text">
+            <h2>Experience the world with us</h2>
+            <p>With WKND Adventures, you don't just see the world -- you experience its cultures, flavors, and wonders.</p>
+        </div>
+    </section>
+    
+    <section id="current-adventures">
+        <div class="navbar">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="climbing">Climbing</button>
+            <button class="filter-btn" data-filter="cycling">Cycling</button>
+            <button class="filter-btn" data-filter="skiing">Skiing</button>
+            <button class="filter-btn" data-filter="surfing">Surfing</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+        </div>
+        
+        <div class="cards-container">
+          
+        </div>
+    </section>
+
+    <section id="detailed-view" class="hidden">
+        <div class="detailed-content">
+            <div class="detailed-image">
+                <img id="detailed-image" src="" alt="Detailed Image">
+            </div>
+            <div class="detailed-info">
+                <h2 id="detailed-title">Title</h2>
+                <div id="detailed-description">Description</div>
+                <div class="details">
+                    <div class="detail-item">
+                        <strong>Activity:</strong> <span id="detailed-activity"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Adventure Type:</strong> <span id="detailed-adventure-type"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Trip Length:</strong> <span id="detailed-trip-length"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Group Size:</strong> <span id="detailed-group-size"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Difficulty:</strong> <span id="detailed-difficulty"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Price:</strong> $<span id="detailed-price"></span>
+                    </div>
+                </div>
+                <p id="detailed-additional-info"></p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="Adventures.js"></script>
+</body>
+</html> -->

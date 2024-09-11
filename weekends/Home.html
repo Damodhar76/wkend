@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <header class="hedernav">
+        <div class="headerpart">
+            <a href="login.html">SIGN UP</a>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="login.html">
+                    <img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg" alt="Logo">
+                </a>
+            
+            </div>
+            <div class="nav-links">
+                
+                <a href="Magazine.html">MAGAZINE</a>
+                <a href="Adventures.html">ADVENTURES</a>
+                <a href="Faqs.html">FAQS</a>
+                <a href="Abouters.html">ABOUT US</a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="6" stroke="#000" stroke-width="2"/>
+                        <line x1="16.5" y1="16.5" x2="20" y2="20" stroke="#000" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <br/>
+    <br/>
+    <!-- <object style="width: 100%; height: 100%;" type="text/html" data="Navbar.htm"></object> -->
+    
+    <div class="carousel">
+        <div class="carousel-images">
+            <!-- Existing Carousel Items -->
+            <div class="carousel-item">
+                <img src="https://wknd.site/us/en/_jcr_content/root/container/carousel/item_1571954853062.coreimg.60.1200.jpeg/1660323801921/adobestock-216674449.jpeg" alt="Image 1">
+                <div class="carousel-content">
+                    <h2>WKND Adventures</h2>
+                    <p>Join us on one of our next adventures. Browse our list of curated experiences and sign up for one when you're ready to explore with us.</p>
+                    <a href="Adventures.html" class="btn">view Trips</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wknd.site/us/en/_jcr_content/root/container/carousel/item_1572035298405.coreimg.60.1200.jpeg/1660323822923/beach-walking.jpeg" alt="Image 2">
+                <div class="carousel-content">
+                    <h2>San Diego Surf Spots</h2>
+                    <p>From the hippie beaches of Ocean Beach to the ritzy shores of La Jolla and everywhere in between. Discover the San Diego surf scene.</p>
+                    <a href="Adventures.html" class="btn">FULL ARTICLE</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wknd.site/us/en/_jcr_content/root/container/carousel/teaser.coreimg.60.1200.jpeg/1660323784078/adobestock-185234795.jpeg" alt="Image 3">
+                <div class="carousel-content">
+                    <h2>Downhill Skiing Wyoming</h2>
+                    <p>A skiers paradise far from crowds and close to nature with terrain so vast it appears uncharted.</p>
+                    <a href="Adventures.html" class="btn">view Trips</a>
+                </div>
+            </div>
+           
+            <div class="carousel-item">
+                <img src="https://wknd.site/us/en/_jcr_content/root/container/container/teaser.coreimg.60.1200.jpeg/1660323792132/adobestock-156407519.jpeg" alt="Image 4">
+                <div class="carousel-content">
+                    <h2>Featured Article</h2>
+                    <p>The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world.</p>
+                    <a href="Adventures.html" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+       <div class="container_img">
+            <div class="image-section">
+                <img src="https://wknd.site/us/en/_jcr_content/root/container/container/teaser.coreimg.60.1200.jpeg/1660323792132/adobestock-156407519.jpeg" alt="Camping in Western Australia">
+            </div>
+            <div class="text-section">
+                <h1>Featured Article</h1>
+                <h2>Camping in Western Australia</h2>
+                <p>The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world.</p>
+                <a href="Abouters.html" class="button">Full Articles</a>
+            </div>
+        </div>
+
+    <section class="recent-articles">
+        <h1>Recent Articles</h1>
+        <div class="articles-grid">
+            <article>
+                <img src="https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1200.png/1660323783259/article-01-picture-01.png" alt="Article 1">
+                <h3>Ultimate Guide to LA Skateparks</h3>
+                <p>Breaking down the top skate destinati...</p>
+            </article>
+            <article>
+                <img src="https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323789866/skitouring5sjoeberg.jpeg" alt="Article 2">
+                <h3>Ski Touring</h3>
+                <p>Learn about our ski touring experien</p>
+            </article>
+            <article>
+                <img src="https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323789770/surfer-wave-02.jpeg" alt="Article 3">
+                <h3>Arctic Surfing</h3>
+                <p>We traveled to Northern Norway to doc</p>
+            </article>
+            <article>
+                <img src="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323790169/adobestock-164735399.jpeg" alt="Article 4">
+                <h3>San Diego Surf Spots</h3>
+                <p>Best beach breaks</p>
+            </article>
+            <br>
+            <a href="Magazine.html" class="btn">All Trips</a>
+         
+        </div>
+    </section>
+
+
+    <h1>Next Adventures</h1>
+    <div class="container_img">
+        
+        <div class="image-section">
+            <img src="https://wknd.site/us/en/_jcr_content/root/container/teaser.coreimg.60.1200.jpeg/1660323789729/adobestock-140634652.jpeg" alt="Camping in Western Australia">
+        </div>
+        <div class="text-section">
+            <h1>Climbing New Zealand</h1>
+            <h2>Camping in Western Australia</h2>
+            <p>Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary.</p>
+        </div>
+    </div>
+
+<section class="recent-articles">
+    <h1>Where do you want to go?</h1>
+    <div class="articles-grid">
+        <article>
+            <img src="https://wknd.site/us/en/adventures/yosemite-backpacking/_jcr_content/root/container/carousel/image.coreimg.60.1200.jpeg/1660323790695/adobestock-231698835.jpeg" alt="Article 1">
+            <h3>Yosemite Backpacking</h3>
+            <p>Yosemite National Park, designated a .</p>
+        </article>
+        <article>
+            <img src="https://wknd.site/us/en/adventures/whistler-mountain-biking/_jcr_content/root/container/carousel/image.coreimg.60.1200.jpeg/1660323789625/adobestock-122615840.jpeg" alt="Article 2">
+            <h3>Whistler Mountain Biking</h3>
+            <p>Whistler is often considered North</p>
+        </article>
+        <article>
+            <img src="https://wknd.site/us/en/adventures/west-coast-cycling/_jcr_content/root/container/carousel/image.coreimg.60.1200.jpeg/1660323786740/adobestock-151584995.jpeg" alt="Article 3">
+            <h3>West Coast Cycling</h3>
+            <p>Join us for this once in a lifetime bik</p>
+        </article>
+        <article>
+            <img src="https://wknd.site/us/en/adventures/tahoe-skiing/_jcr_content/root/container/carousel/image.coreimg.60.1200.jpeg/1660323785476/adobestock-184591344.jpeg" alt="Article 4">
+            <h3>Tahoe Skiing</h3>
+            <p>Great weather, crystal clear lake wa</p>
+        </article>
+    </div>
+</section>
+
+    <script src="carousel.js"></script>
+    <!-- <iframe src="Footer.html"></iframe> -->
+    <!-- <iframe src="Footer.html" style="width: 100%; height: 280px;" frameborder="0"></iframe> -->
+     <!-- Footer container -->
+     <div id="footer"></div>
+
+     <script>
+         // JavaScript to load the footer content
+         fetch('Footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer').innerHTML = data;
+             });
+     </script>
+</body>
+</html>

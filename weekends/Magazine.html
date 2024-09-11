@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Layout</title>
+    <link rel="stylesheet" href="Magazine.css">
+</head>
+<body>
+    <header class="hedernav">
+        <div class="headerpart">
+            <a href="login.html">SIGN UP</a>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="login.html">
+                    <img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg" alt="Logo">
+                </a>
+            
+            </div>
+            <div class="nav-links">
+                <a href="Home.html">HOME</a>
+                <!-- <a href="Magazine.html">MAGAZINE</a> -->
+                <a href="Adventures.html">ADVENTURES</a>
+                <a href="Faqs.html">FAQS</a>
+                <a href="Abouters.html">ABOUT US</a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="6" stroke="#000" stroke-width="2"/>
+                        <line x1="16.5" y1="16.5" x2="20" y2="20" stroke="#000" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="faq-container">
+            <div class="faq-image">
+                <img src="https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.1200.jpeg/1660323792132/adobestock-156407519.jpeg" alt="Camping in Western Australia">
+            </div>
+            <div class="faq-info">
+                <h3>Featured Article</h3>
+                <h2>Camping in Western Australia</h2>
+                <p>The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world.</p>
+            </div>
+        </div>
+
+        <!-- All Articles Section -->
+        <div class="articles-section">
+            <h2>All Articles</h2>
+            <div class="articles-container">
+                <div class="article-card">
+                    <img src="https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323789770/surfer-wave-02.jpeg" alt="Article Image">
+                    <h3>Arctic Surfing</h3>
+                    <p>We traveled to Northern Norway to d.</p>
+                </div>
+                <div class="article-card">
+                    <img src="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323790169/adobestock-164735399.jpeg" alt="Article Image">
+                    <h3>San Diego Surf Spots</h3>
+                    <p>Best beach breaks.</p>
+                </div>
+                <div class="article-card">
+                    <img src="https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323789866/skitouring5sjoeberg.jpeg" alt="Article Image">
+                    <h3>Ski Touring </h3>
+                    <p>Learn about our ski touring experienc.</p>
+                </div>
+                <div class="article-card">
+                    <img src="https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1200.png/1660323783259/article-01-picture-01.png" alt="Article Image">
+                    <h3>Ultimate Guide to LA Skateparks</h3>
+                    <p>Breaking down the top skate destina.</p>
+                </div>
+                <div class="article-card">
+                    <img src="https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1200.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg" alt="Article Image">
+                    <h3>Western Australia</h3>
+                    <p>The Australian West coast is a camper’s.</p>
+                </div>
+            </div>
+        </div>
+        <div class="articles-section">
+            <h2>Members Only</h2>
+            <p><b>Sign in </b>to un-lock exclusive content for WKND members only!</p>
+        </div>
+        <hr/>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // JavaScript to load the footer content
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
